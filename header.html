@@ -1,0 +1,128 @@
+<header>
+    <a href="index.html" class="logo">
+        <img src="logo1.png" alt="Code Sikho" width="200px" class="logo12" />
+    </a>
+    <nav class="hod">
+        <ul>
+            <li><button class="contact-us-btn">About Us</button></li>
+            <li> <button id="modeToggle" class="toggle-button">
+                <span class="icon sun">&#9728;</span>
+                <span class="icon moon">&#9790;</span>
+            </button></li>
+            <li>
+                <button class="loginbutton1" onclick="document.getElementById('id01').style.display='block'">
+                    Login
+                </button>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<!-- LOGIN POP-UP MODAL -->
+<div id="id01" class="modal">
+    <form class="modal-content animate" action="#" method="post">
+        <div class="imgcontainer">
+            <span class="close" title="Close Modal"
+                onclick="document.getElementById('id01').style.display='none'">×</span>
+        </div>
+        <div class="container">
+            <!-- Sign-Up Form -->
+            <div class="sign-up" id="loss">
+                <h1>Create Account</h1>
+                <p>Or use your email for registration</p>
+                <input class="sign-in-input" type="text" name="txt" placeholder="Enter Your Name" required="" />
+                <input class="sign-in-input" type="email" name="email" placeholder="Enter Your email" required="" />
+                <input class="sign-in-input" type="password" name="password" placeholder="Enter Your Password"
+                    required="" />
+                <div class="social-none">
+                    <a href="#" class="social"><i class='bx bxl-facebook'></i></a>
+                    <a href="#" class="social"><i class='bx bxl-google'></i></a>
+                    <a href="#" class="social"><i class='bx bxl-linkedin'></i></a>
+                </div>
+                <button type="submit">Sign-Up</button>
+            </div>
+
+            <!-- Sign-In Form -->
+            <div class="sign-in">
+                <h1>Sign in</h1>
+                <p>Or use your account</p>
+                <input class="sign-in-input" type="email" name="email" placeholder="Enter Your email" required="" />
+                <input class="sign-in-input" type="password" name="password" placeholder="Enter Your Password"
+                    required="" />
+                <div class="social-none">
+                    <a href="#" class="social"><i class='bx bxl-facebook'></i></a>
+                    <a href="#" class="social"><i class='bx bxl-google'></i></a>
+                    <a href="#" class="social"><i class='bx bxl-linkedin'></i></a>
+                </div>
+                <a href="#">Forget your Password?</a>
+                <button type="submit">Sign-In</button>
+            </div>
+
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-left">
+                        <h1>Welcome Back!</h1>
+                        <p>To keep connected with us please login with personal info</p>
+                        <button id="signIn"
+                            onclick="document.getElementById('loss').style.display='none'; document.querySelector('.sign-in').style.display='block'">Sign-In</button>
+                    </div>
+
+                    <div class="overlay-right">
+                        <h1>Hello, Friend</h1>
+                        <p>Enter your personal details and start your journey with us</p>
+                        <button id="signUp"
+                            onclick="document.querySelector('.sign-in').style.display='none'; document.getElementById('loss').style.display='block'">Sign-Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<!-- sticy navigatiob bar -->
+<div class="stecky">
+    <div class="menu">
+        <a href="index.html"><img src="home_icon.png" alt="HOME" width="25px" /></a>
+        <div id="mySidenav" class="navi">
+            <div><a href="#">All Tutorials</a></div>
+            <div><a href="videoes.html">Videos</a></div>
+            <div><a href="notes.html">Notes</a></div>
+            <div><a href="#">Practice Problems</a></div>
+            <div><a href="#">Books</a></div>
+            <div><a href="#">University Space</a></div>
+        </div>
+        <input class="search" type="text" name="search" placeholder="Search... " />
+    </div>
+</div>
+
+<!--  CONTENT for header -->
+<div class="first1">
+    <div class="daco" style="margin: 40px 90px">
+        <img src="io.svg" alt="" />
+    </div>
+    <div class="picture">
+        <div class="inte">
+            <h1 class="hellow" style="color: #ff9933">Code</h1>
+            <h1 class="hellow" style="color: #ffffff">सीखेगा</h1>
+            <h1 class="hellow" style="color: #138808">Bharat</h1>
+        </div>
+        <main class="c1">
+            <p>Hello 👋 Programmer</p>
+            <section class="animation1">
+                <div class="first" style="text-transform: uppercase">
+                    <div>learn Code</div>
+                </div>
+                <div class="second" style="text-transform: uppercase">
+                    <div>Do practice</div>
+                </div>
+                <div class="third" style="text-transform: uppercase">
+                    <div>Have Fun</div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <div class="daco" style="margin: -40px 90px; float: right">
+        <img src="io.svg" alt="" />
+    </div>
+</div>
+<script src="main.js"></script>

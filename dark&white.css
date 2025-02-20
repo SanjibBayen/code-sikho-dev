@@ -1,0 +1,134 @@
+:root {
+  --background-color: white;
+  --text-color: black;
+  --button-bg-light: #ffdf85;
+  --button-bg-dark: #2c3e50;
+  --icon-color-light: #f39c12;
+  --icon-color-dark: #ecf0f1;
+  --button-shadow-light: rgba(243, 156, 18, 0.5);
+  --button-shadow-dark: rgba(44, 62, 80, 0.5);
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.4s, color 0.4s;
+}
+
+
+.container {
+  text-align: center;
+  padding: 50px;
+}
+
+ /* button {
+  background-color: var(--text-color);
+  color: var(--background-color);
+
+} */
+
+button:hover {
+  opacity: 0.9;
+}
+body.dark-mode {
+  --background-color:#031220;;
+  --text-color: white;
+}
+
+/* Default Variables */
+
+/* Body Styling */
+
+
+
+/* Toggle Button Styling */
+.toggle-button {
+  width: 70px;
+  height: 30px;
+  border: none;
+  /* border-radius: 10%; */
+  cursor: pointer;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--button-bg-light);
+  /* box-shadow: 0 8px 15px var(--button-shadow-light); */
+  /* transition: background-color 0.4s, box-shadow 0.4s; */
+  transition: all 0.3s ease;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.toggle-button .icon {
+  position: absolute;
+  font-size: 20px;
+  /* top: 50%; */
+  /* left: 50%; */
+  transform: translate(-50%, -50%);
+  transition: opacity 0.4s, transform 0.4s;
+}
+
+.toggle-button .sun {
+  color: var(--icon-color-light);
+  left: 70%;
+}
+.moon{
+  right:50%;
+}
+.toggle-button .moon {
+  color: var(--icon-color-dark);
+  opacity: 0;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  
+}
+
+body.dark-mode .toggle-button {
+  background-color: var(--button-bg-dark);
+  box-shadow: 0 8px 15px var(--button-shadow-dark);
+}
+
+body.dark-mode .toggle-button .sun {
+  opacity: 0;
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+body.dark-mode .toggle-button .moon {
+  opacity: 1;
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .toggle-button {
+    width: 60px;
+    height: 60px;
+  }
+
+  .toggle-button .icon {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  .toggle-button {
+    width: 50px;
+    height: 50px;
+  }
+
+  .toggle-button .icon {
+    font-size: 20px;
+  }
+}

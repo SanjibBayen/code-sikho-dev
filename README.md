@@ -1,1 +1,2 @@
-# code-sikho-dev
+# Code-Sikho
+A project work for better coding sessions 
